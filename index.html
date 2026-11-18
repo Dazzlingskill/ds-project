@@ -414,32 +414,652 @@ section {
 
 /* FOOTER */
 
-footer {
-    background: #06152d;
-    color: white;
-    padding: 55px 0 25px;
+
+/* =================================
+   GMB PRO PREMIUM FOOTER
+================================= */
+
+.gmb-footer {
+    background: linear-gradient(
+        135deg,
+        #071426,
+        #0b1e36,
+        #102b4b
+    );
+    color: #ffffff;
+    padding: 75px 7% 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
-.footer-content {
+.gmb-footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.3fr;
+    gap: 45px;
+    padding-bottom: 55px;
+}
+
+/* BRAND */
+
+.gmb-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.gmb-logo strong {
+    color: #38bdf8;
+}
+
+.gmb-logo-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: white;
+}
+
+.gmb-footer-brand p {
+    color: #aebed0;
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 20px 0;
+    max-width: 290px;
+}
+
+/* HEADINGS */
+
+.gmb-footer h3 {
+    font-size: 18px;
+    margin: 7px 0 25px;
+    color: #ffffff;
+    position: relative;
+}
+
+.gmb-footer h3::after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background: #38bdf8;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* LINKS */
+
+.gmb-footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gmb-footer-links li {
+    margin-bottom: 15px;
+}
+
+.gmb-footer-links a,
+.gmb-footer-contact a {
+    color: #aebed0;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.gmb-footer-links a:hover,
+.gmb-footer-contact a:hover {
+    color: #38bdf8;
+    padding-left: 5px;
+}
+
+/* SOCIAL ICONS */
+
+.gmb-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.gmb-socials a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.gmb-socials a:hover {
+    background: #0ea5e9;
+    transform: translateY(-4px);
+}
+
+/* CONTACT */
+
+.gmb-footer-contact p {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #aebed0;
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+
+.gmb-footer-contact p span {
+    color: #38bdf8;
+    font-size: 18px;
+}
+
+/* BUTTON */
+
+.gmb-footer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 13px 23px;
+    background: linear-gradient(135deg, #0284c7, #2563eb);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.gmb-footer-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(14,165,233,0.3);
+}
+
+/* BOTTOM BAR */
+
+.gmb-footer-bottom {
+    max-width: 1200px;
+    margin: auto;
+    border-top: 1px solid rgba(255,255,255,0.13);
+    padding-top: 22px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 35px;
+    align-items: center;
+    gap: 15px;
 }
 
-footer p {
-    color: #aabbd4;
-    line-height: 1.8;
-    max-width: 400px;
-    margin-top: 15px;
+.gmb-footer-bottom p,
+.gmb-footer-bottom a {
+    color: #91a4bb;
+    font-size: 13px;
 }
 
-footer a {
-    color: #b8c9e3;
+.gmb-footer-bottom div {
+    display: flex;
+    gap: 22px;
+}
+
+.gmb-footer-bottom a {
     text-decoration: none;
+}
+
+.gmb-footer-bottom a:hover {
+    color: #38bdf8;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .gmb-footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+    .gmb-footer {
+        padding: 50px 6% 20px;
+    }
+
+    .gmb-footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .gmb-footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gmb-footer-bottom div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   GMB PRO - ULTRA PREMIUM FOOTER
+========================================= */
+
+.gmb-ultra-footer {
+    position: relative;
+    overflow: hidden;
+    padding: 85px 6% 25px;
+    color: #ffffff;
+    background:
+        radial-gradient(ellipse at 50% 110%,
+        rgba(0, 102, 255, .28), transparent 45%),
+        linear-gradient(130deg, #020b1d, #071a38 65%, #020a19);
+    font-family: Arial, sans-serif;
+}
+
+/* TOP NEON GLOW */
+
+.gmb-footer-top-glow {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #007bff,
+        #00d9ff,
+        #007bff,
+        transparent
+    );
+    box-shadow: 0 0 20px #008cff;
+}
+
+/* DOT PATTERN */
+
+.gmb-footer-dots {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 90px;
+    height: 75px;
+    opacity: .45;
+    background-image: radial-gradient(#008cff 2px, transparent 2px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+/* MAIN GRID */
+
+.gmb-footer-main {
+    max-width: 1450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.25fr;
+    gap: 45px;
+    padding-bottom: 65px;
+    position: relative;
+    z-index: 1;
+}
+
+/* BRAND LOGO */
+
+.gmb-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.gmb-footer-logo-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00c8ff, #0758ff);
+    font-size: 48px;
+    box-shadow: 0 0 30px rgba(0, 136, 255, .4);
+}
+
+.gmb-footer-logo strong {
+    color: #08c5ff;
+}
+
+.gmb-footer-logo small {
     display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top: 5px;
+}
+
+/* DESCRIPTION */
+
+.gmb-footer-description {
+    max-width: 370px;
+    color: #c1d0e5;
+    font-size: 15px;
+    line-height: 1.85;
+    margin: 30px 0 20px;
+}
+
+.gmb-footer-line {
+    width: 90px;
+    height: 3px;
+    background: linear-gradient(90deg, #00d9ff, #0758ff);
+    margin-bottom: 22px;
+}
+
+.gmb-footer-brand h4 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+/* SOCIAL BUTTONS */
+
+.gmb-footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.gmb-footer-socials a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #087cff, #0649bd);
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.gmb-footer-socials a:nth-child(2) {
+    background: linear-gradient(45deg, #ffb000, #ed168e, #7134df);
+}
+
+.gmb-footer-socials a:nth-child(3) {
+    background: #087abf;
+}
+
+.gmb-footer-socials a:nth-child(4) {
+    background: #ed1010;
+}
+
+.gmb-footer-socials a:nth-child(5) {
+    background: #080d18;
+    border: 1px solid #718096;
+}
+
+.gmb-footer-socials a:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 153, 255, .4);
+}
+
+/* COLUMN HEADING */
+
+.gmb-footer-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.gmb-heading-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #08baff, #0755ed);
+    box-shadow: 0 0 20px rgba(0, 140, 255, .25);
+    font-size: 25px;
+}
+
+.gmb-footer-heading h3 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 750;
+    position: relative;
+}
+
+.gmb-footer-heading h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #00d9ff, transparent);
+}
+
+/* FOOTER LINKS */
+
+.gmb-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gmb-footer-column ul li {
+    margin-bottom: 19px;
+}
+
+.gmb-footer-column ul li a {
+    color: #d1dbea;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .3s;
+    display: inline-block;
+}
+
+.gmb-footer-column ul li a::before {
+    content: "›";
+    color: #00bfff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 12px;
+    vertical-align: -2px;
+}
+
+.gmb-footer-column ul li a:hover {
+    color: #00cfff;
+    transform: translateX(5px);
+}
+
+/* CONTACT CARDS */
+
+.gmb-contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 58px;
+    padding: 10px 15px;
+    margin-bottom: 9px;
+    border-radius: 15px;
+    background: linear-gradient(
+        110deg,
+        rgba(19, 49, 91, .95),
+        rgba(12, 36, 72, .8)
+    );
+    border: 1px solid rgba(255,255,255,.035);
+    color: #e4edf9;
+    font-size: 14px;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: .3s;
+}
+
+.gmb-contact-card span {
+    color: #00caff;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.gmb-contact-card:hover {
+    border-color: #008cff;
+    transform: translateX(4px);
+}
+
+/* CTA BUTTON */
+
+.gmb-footer-button {
     margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 245px;
+    padding: 17px 25px;
+    background: linear-gradient(120deg, #08bafa, #0755fa);
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 7px 25px rgba(0, 111, 255, .25);
+    transition: .3s;
+}
+
+.gmb-footer-button span {
+    font-size: 24px;
+}
+
+.gmb-footer-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 145, 255, .5);
+}
+
+/* BOTTOM BAR */
+
+.gmb-footer-bottom {
+    max-width: 1450px;
+    margin: auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(0, 195, 255, .35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.gmb-footer-bottom p {
+    color: #d0dced;
+    font-size: 14px;
+    margin: 0;
+}
+
+.gmb-footer-bottom p strong {
+    color: #00caff;
+}
+
+.gmb-footer-legal {
+    display: flex;
+    gap: 30px;
+}
+
+.gmb-footer-legal a,
+.gmb-back-top {
+    color: #d0dced;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.gmb-footer-legal a:hover,
+.gmb-back-top:hover {
+    color: #00caff;
+}
+
+.gmb-back-top {
+    padding: 12px 20px;
+    border: 1px solid #355580;
+    border-radius: 25px;
+}
+
+.gmb-back-top:hover {
+    border-color: #00bfff;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .gmb-footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px 30px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .gmb-ultra-footer {
+        padding: 55px 22px 25px;
+    }
+
+    .gmb-footer-main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding-bottom: 40px;
+    }
+
+    .gmb-footer-logo {
+        font-size: 28px;
+    }
+
+    .gmb-footer-logo-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 38px;
+    }
+
+    .gmb-footer-heading h3 {
+        font-size: 19px;
+    }
+
+    .gmb-footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gmb-footer-legal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .gmb-footer-dots {
+        opacity: .2;
+    }
 }
 
 .copyright {
@@ -781,42 +1401,138 @@ footer a {
 </div>
 </section>
 
-<!-- FOOTER -->
 
-<footer>
-<div class="container">
+<!-- GMB PRO ULTRA PREMIUM FOOTER -->
 
-<div class="footer-content">
+<footer class="gmb-ultra-footer" id="footer">
 
-    <div>
-        <div class="logo" style="color:white">GMB<span>PRO.</span></div>
-        <p>Helping local businesses establish a stronger digital presence through Google Business Profile and local SEO strategies.</p>
+  <div class="gmb-footer-top-glow"></div>
+  <div class="gmb-footer-dots"></div>
+
+  <div class="gmb-footer-main">
+
+    <!-- BRAND -->
+    <div class="gmb-footer-brand">
+
+      <a href="#home" class="gmb-footer-logo">
+        <span class="gmb-footer-logo-icon">G</span>
+        <span>
+          GMB <strong>PRO</strong>
+          <small>Grow Your Business Online</small>
+        </span>
+      </a>
+
+      <p class="gmb-footer-description">
+        Boost your business with Google Business Profile
+        optimization, Local SEO and smart digital
+        marketing solutions.
+      </p>
+
+      <div class="gmb-footer-line"></div>
+
+      <h4>Follow Us</h4>
+
+      <div class="gmb-footer-socials">
+        <a href="https://facebook.com/" aria-label="Facebook">f</a>
+        <a href="https://instagram.com/" aria-label="Instagram">◎</a>
+        <a href="https://linkedin.com/" aria-label="LinkedIn">in</a>
+        <a href="https://youtube.com/" aria-label="YouTube">▶</a>
+        <a href="https://x.com/" aria-label="X">𝕏</a>
+      </div>
+
     </div>
 
-    <div>
+    <!-- QUICK LINKS -->
+    <div class="gmb-footer-column">
+
+      <div class="gmb-footer-heading">
+        <span class="gmb-heading-icon">↗</span>
         <h3>Quick Links</h3>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
     </div>
 
-    <div>
+    <!-- SERVICES -->
+    <div class="gmb-footer-column">
+
+      <div class="gmb-footer-heading">
+        <span class="gmb-heading-icon">⚙</span>
         <h3>Our Services</h3>
-        <a href="#services">GMB Optimization</a>
-        <a href="#services">Local SEO</a>
-        <a href="#services">Review Management</a>
-        <a href="#services">Business Growth</a>
+      </div>
+
+      <ul>
+        <li><a href="#services">Google Business Profile</a></li>
+        <li><a href="#services">Local SEO</a></li>
+        <li><a href="#services">Google Maps Ranking</a></li>
+        <li><a href="#services">Website Optimization</a></li>
+        <li><a href="#services">Digital Marketing</a></li>
+      </ul>
+
     </div>
 
-</div>
+    <!-- CONTACT -->
+    <div class="gmb-footer-column gmb-footer-contact">
 
-<div class="copyright">
-    © 2026 GMB Pro. All Rights Reserved.
-</div>
+      <div class="gmb-footer-heading">
+        <span class="gmb-heading-icon">☎</span>
+        <h3>Get In Touch</h3>
+      </div>
 
-</div>
+      <a href="mailto:your-email@example.com"
+         class="gmb-contact-card">
+        <span>✉</span>
+        your-email@example.com
+      </a>
+
+      <a href="tel:+910000000000"
+         class="gmb-contact-card">
+        <span>☎</span>
+        +91 00000 00000
+      </a>
+
+      <div class="gmb-contact-card">
+        <span>⌖</span>
+        India
+      </div>
+
+      <a href="#contact" class="gmb-footer-button">
+        Let's Talk <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM SECTION -->
+  <div class="gmb-footer-bottom">
+
+    <p>
+      © 2026 <strong>GMB PRO.</strong>
+      All Rights Reserved.
+    </p>
+
+    <div class="gmb-footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+
+    <a href="#home" class="gmb-back-top">
+      ↑ Back to Top
+    </a>
+
+  </div>
+
 </footer>
+
+<!-- END GMB PRO FOOTER -->
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e) {
