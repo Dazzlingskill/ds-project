@@ -536,95 +536,7 @@ footer a {
    DAZZLING SKILL PREMIUM HERO
 ===================================== */
 
-.hero.hero-ds {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    padding: 105px 0 115px;
-    color: #ffffff;
-    background:
-        radial-gradient(circle at 80% 20%, rgba(190, 145, 55, 0.15), transparent 30%),
-        linear-gradient(120deg, #080b12 0%, #111827 55%, #17130c 100%);
-}
 
-.ds-hero-glow {
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    right: -120px;
-    top: -160px;
-    border-radius: 50%;
-    background: rgba(218, 170, 76, 0.12);
-    filter: blur(100px);
-    z-index: -1;
-}
-
-.ds-hero-content {
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
-    gap: 65px;
-    position: relative;
-    z-index: 1;
-}
-
-/* LEFT CONTENT */
-
-.ds-hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 11px 16px;
-    border: 1px solid rgba(218, 170, 76, 0.35);
-    border-radius: 50px;
-    background: rgba(218, 170, 76, 0.08);
-    color: #e9c477;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.4px;
-    margin-bottom: 25px;
-}
-
-.ds-live-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #e9c477;
-    box-shadow: 0 0 12px #e9c477;
-}
-
-.ds-hero-title {
-    color: #ffffff;
-    font-size: clamp(42px, 5.2vw, 68px);
-    line-height: 1.12;
-    font-weight: 900;
-    letter-spacing: -2px;
-    margin: 0 0 25px;
-}
-
-.ds-hero-title span {
-    display: block;
-    color: #e9c477;
-    background: linear-gradient(90deg, #f7dfa0, #c99538);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.ds-hero-description {
-    max-width: 540px;
-    color: #b9c0cc;
-    font-size: 16px;
-    line-height: 1.9;
-}
-
-.ds-hero-buttons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 32px;
-}
 
 .ds-primary-btn,
 .ds-outline-btn {
@@ -853,6 +765,540 @@ footer a {
         font-size: 8px;
     }
 }
+
+/* =====================================
+   DAZZLING SKILL - NEXT LEVEL HERO
+===================================== */
+
+.hero.hero-ds {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 100px 0 0;
+    background: #080a0f;
+    color: #fff;
+}
+
+/* Background grid */
+.hero-grid {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: .18;
+    background-image:
+        linear-gradient(rgba(212,169,89,.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,169,89,.12) 1px, transparent 1px);
+    background-size: 65px 65px;
+    mask-image: linear-gradient(to bottom, black, transparent 95%);
+}
+
+/* Glowing orbs */
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.hero-orb-one {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    right: 5%;
+    background: rgba(197, 151, 61, .16);
+}
+
+.hero-orb-two {
+    width: 350px;
+    height: 350px;
+    bottom: 5%;
+    left: -180px;
+    background: rgba(142, 107, 40, .12);
+}
+
+/* Main Layout */
+.ds-hero-content {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 75px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Left side */
+.ds-hero-text {
+    padding-bottom: 45px;
+}
+
+.ds-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 16px;
+    border: 1px solid rgba(218, 177, 99, .25);
+    border-radius: 50px;
+    background: rgba(210, 168, 87, .06);
+    color: #d9b56e;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+.badge-dot,
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d9b56e;
+    box-shadow: 0 0 12px #d9b56e;
+}
+
+.ds-hero-title {
+    font-size: clamp(48px, 5.5vw, 78px);
+    font-weight: 900;
+    line-height: 1.04;
+    letter-spacing: -3.5px;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.ds-hero-title span {
+    display: inline-block;
+    background: linear-gradient(
+        100deg,
+        #fff2ce 0%,
+        #d8ae61 45%,
+        #a97927 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ds-hero-description {
+    max-width: 540px;
+    font-size: 15px;
+    line-height: 1.95;
+    color: #a5adba;
+}
+
+/* Buttons */
+.ds-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.ds-primary-btn,
+.ds-outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 54px;
+    padding: 0 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    transition: .3s ease;
+}
+
+.ds-primary-btn {
+    color: #15120c;
+    background: linear-gradient(135deg, #f0d79b, #c29546);
+    box-shadow: 0 10px 30px rgba(194, 147, 64, .15);
+}
+
+.ds-primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(194, 147, 64, .3);
+}
+
+.btn-arrow {
+    font-size: 19px;
+    transition: transform .3s;
+}
+
+.ds-primary-btn:hover .btn-arrow {
+    transform: translate(3px, -3px);
+}
+
+.ds-outline-btn {
+    color: #e6e8ec;
+    border: 1px solid #30343d;
+    background: rgba(255,255,255,.02);
+}
+
+.ds-outline-btn:hover {
+    border-color: #c9a35c;
+    color: #e5bd75;
+    background: rgba(202, 161, 83, .06);
+}
+
+/* Checkpoints */
+.ds-hero-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.ds-hero-points span {
+    color: #aab1bd;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.ds-hero-points i {
+    font-style: normal;
+    color: #d8b56b;
+    margin-right: 6px;
+}
+
+/* Right side visual */
+.ds-hero-visual {
+    position: relative;
+    padding: 12px 15px 55px;
+}
+
+.ds-visual-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.visual-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #a8afbb;
+}
+
+.visual-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c5cbd3;
+    font-size: 10px;
+}
+
+/* Main image */
+.ds-main-image {
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(211, 171, 93, .24);
+    background: #14171c;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+}
+
+.ds-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .7s ease;
+    filter: brightness(.78);
+}
+
+.ds-hero-visual:hover .ds-main-image img {
+    transform: scale(1.045);
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(5, 7, 11, .95) 0%,
+        rgba(5, 7, 11, .15) 60%,
+        rgba(5, 7, 11, .05) 100%
+    );
+}
+
+.image-content {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+}
+
+.image-content span {
+    display: block;
+    color: #d7b36b;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.image-content h3 {
+    color: white;
+    font-size: 37px;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+/* Floating cards */
+.ds-float-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 1px solid rgba(214, 176, 100, .22);
+    border-radius: 13px;
+    background: rgba(17, 19, 24, .92);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 18px 50px rgba(0,0,0,.3);
+    z-index: 3;
+}
+
+.ds-float-top {
+    top: 65px;
+    right: -25px;
+    padding: 15px 18px;
+}
+
+.ds-float-bottom {
+    left: -28px;
+    bottom: 20px;
+    padding: 17px 20px;
+}
+
+.float-icon,
+.float-mini-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    color: #e3bd78;
+    background: rgba(208, 169, 91, .12);
+    border: 1px solid rgba(208, 169, 91, .15);
+    border-radius: 10px;
+    width: 43px;
+    height: 43px;
+    font-size: 21px;
+}
+
+.ds-float-card strong {
+    display: block;
+    color: #f3f3f4;
+    font-size: 12px;
+}
+
+.ds-float-card small {
+    display: block;
+    margin-top: 5px;
+    color: #9ba3af;
+    font-size: 10px;
+}
+
+.ds-image-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -35px;
+    bottom: 25px;
+    border: 1px solid rgba(211, 171, 93, .15);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Bottom strip */
+.ds-hero-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(255,255,255,.09);
+    margin-top: 35px;
+    padding: 25px 0;
+}
+
+.hero-bottom-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    border-right: 1px solid rgba(255,255,255,.08);
+}
+
+.hero-bottom-item:last-child {
+    border-right: 0;
+}
+
+.bottom-icon {
+    color: #c9a35c;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid rgba(201, 162, 88, .25);
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.hero-bottom-item strong {
+    display: block;
+    color: #e8e9eb;
+    font-size: 12px;
+}
+
+.hero-bottom-item small {
+    display: block;
+    color: #838c99;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .hero.hero-ds {
+        padding-top: 75px;
+    }
+
+    .ds-hero-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .ds-hero-text {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .ds-hero-description {
+        margin: auto;
+    }
+
+    .ds-hero-buttons,
+    .ds-hero-points {
+        justify-content: center;
+    }
+
+    .ds-hero-visual {
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .ds-float-top {
+        right: -10px;
+    }
+
+    .ds-float-bottom {
+        left: -10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero.hero-ds {
+        padding-top: 55px;
+    }
+
+    .ds-hero-content {
+        gap: 15px;
+    }
+
+    .ds-hero-badge {
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding: 10px 13px;
+        margin-bottom: 23px;
+    }
+
+    .ds-hero-title {
+        font-size: 43px;
+        letter-spacing: -2px;
+        line-height: 1.08;
+    }
+
+    .ds-hero-description {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .ds-hero-buttons {
+        flex-direction: column;
+    }
+
+    .ds-primary-btn,
+    .ds-outline-btn {
+        width: 100%;
+    }
+
+    .ds-hero-points {
+        gap: 11px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        margin: 28px auto;
+    }
+
+    .ds-hero-visual {
+        width: 100%;
+        padding: 5px 5px 45px;
+    }
+
+    .ds-main-image {
+        height: 340px;
+        border-radius: 16px;
+    }
+
+    .image-content {
+        left: 22px;
+        bottom: 22px;
+    }
+
+    .image-content h3 {
+        font-size: 29px;
+    }
+
+    .ds-float-top {
+        top: 45px;
+        right: 0;
+        padding: 11px;
+    }
+
+    .ds-float-bottom {
+        left: 0;
+        bottom: 10px;
+        padding: 12px;
+    }
+
+    .float-icon,
+    .float-mini-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .ds-hero-bottom {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+
+    .hero-bottom-item {
+        justify-content: flex-start;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        padding: 15px 8px;
+    }
+
+    .hero-bottom-item:last-child {
+        border-bottom: 0;
+    }
+}
+
 </style>
 </head>
 
@@ -861,7 +1307,7 @@ footer a {
 <header>
 <div class="container">
 <nav>
-    <div class="logo">GMB<span>PRO.</span></div>
+    <div class="logo">Dazzling <span>Skill</span></div>
 
     <ul>
         <li><a href="#home">Home</a></li>
@@ -876,9 +1322,12 @@ footer a {
 </div>
 </header>
 
-<!-- PREMIUM DAZZLING SKILL HERO SECTION -->
+
+<!-- PREMIUM HERO SECTION -->
 <section class="hero hero-ds" id="home">
-    <div class="ds-hero-glow"></div>
+    <div class="hero-orb hero-orb-one"></div>
+    <div class="hero-orb hero-orb-two"></div>
+    <div class="hero-grid"></div>
 
     <div class="container ds-hero-content">
 
@@ -886,74 +1335,121 @@ footer a {
         <div class="ds-hero-text">
 
             <div class="ds-hero-badge">
-                <span class="ds-live-dot"></span>
-                DIGITAL MARKETING & SKILL DEVELOPMENT
+                <span class="badge-dot"></span>
+                <span>YOUR DIGITAL GROWTH PARTNER</span>
             </div>
 
             <h1 class="ds-hero-title">
-                Build Your Skills.
-                <span>Shape Your Future.</span>
+                Learn Digital.
+                <br>
+                <span>Build Your Future.</span>
             </h1>
 
             <p class="ds-hero-description">
-                Learn practical digital marketing and web development
-                skills with Dazzling Skill. Explore SEO, Google Ads,
-                Meta Ads, Social Media Marketing and more to prepare
-                yourself for the digital world.
+                Turn your ambitions into real-world skills. Master Digital
+                Marketing, SEO, Web Development and Ads with practical learning
+                designed for the digital world.
             </p>
 
             <div class="ds-hero-buttons">
                 <a href="#services" class="ds-primary-btn">
-                    Explore Courses <span>↗</span>
+                    Explore Our Courses
+                    <span class="btn-arrow">↗</span>
                 </a>
 
-                <a href="#contact" class="ds-outline-btn">
-                    Get in Touch
+                <a href="#about" class="ds-outline-btn">
+                    Discover Dazzling Skill
                 </a>
             </div>
 
             <div class="ds-hero-points">
-                <div>
-                    <span class="ds-check">✓</span>
-                    Practical Learning
-                </div>
-                <div>
-                    <span class="ds-check">✓</span>
-                    Industry-Relevant Skills
-                </div>
+                <span><i>✓</i> Practical Learning</span>
+                <span><i>✓</i> Career-Focused Skills</span>
+                <span><i>✓</i> Real Projects</span>
             </div>
 
         </div>
 
-        <!-- RIGHT IMAGE -->
+        <!-- RIGHT VISUAL -->
         <div class="ds-hero-visual">
 
-            <div class="ds-image-frame">
-                <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&auto=format&fit=crop&q=85"
-                    alt="Students learning digital marketing and technology skills at Dazzling Skill"
-                >
+            <div class="ds-visual-top">
+                <span class="visual-label">DIGITAL SKILLS</span>
+                <span class="visual-status">
+                    <span class="status-dot"></span> Learn & Grow
+                </span>
             </div>
 
-            <!-- FLOATING COURSE CARD -->
-            <div class="ds-floating-card">
-                <div class="ds-card-icon">✦</div>
-                <div>
-                    <strong>Learn. Practice. Grow.</strong>
-                    <p>Your digital journey starts here.</p>
+            <div class="ds-main-image">
+                <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+                    alt="Students learning digital marketing and web development at Dazzling Skill"
+                >
+
+                <div class="image-overlay"></div>
+
+                <div class="image-content">
+                    <span>SKILLS THAT MATTER</span>
+                    <h3>Make Your<br>Next Move.</h3>
                 </div>
             </div>
 
-            <div class="ds-visual-caption">
-                <span class="ds-caption-line"></span>
-                <span>LEARN DIGITAL. THINK BIG.</span>
+            <!-- FLOATING CARD 1 -->
+            <div class="ds-float-card ds-float-top">
+                <div class="float-icon">↗</div>
+                <div>
+                    <small>YOUR NEXT STEP</small>
+                    <strong>Learn New Skills</strong>
+                </div>
             </div>
+
+            <!-- FLOATING CARD 2 -->
+            <div class="ds-float-card ds-float-bottom">
+                <div class="float-mini-icon">✦</div>
+                <div>
+                    <strong>Learn. Practice. Grow.</strong>
+                    <small>Build your digital future</small>
+                </div>
+            </div>
+
+            <div class="ds-image-decoration"></div>
 
         </div>
 
     </div>
+
+    <!-- BOTTOM TRUST STRIP -->
+    <div class="container ds-hero-bottom">
+
+        <div class="hero-bottom-item">
+            <span class="bottom-icon">01</span>
+            <div>
+                <strong>Digital Marketing</strong>
+                <small>Learn modern strategies</small>
+            </div>
+        </div>
+
+        <div class="hero-bottom-item">
+            <span class="bottom-icon">02</span>
+            <div>
+                <strong>Web Development</strong>
+                <small>Build real websites</small>
+            </div>
+        </div>
+
+        <div class="hero-bottom-item">
+            <span class="bottom-icon">03</span>
+            <div>
+                <strong>Practical Skills</strong>
+                <small>Learn by doing</small>
+            </div>
+        </div>
+
+    </div>
+
 </section>
-<!-- END HERO SECTION -->
+<!-- END PREMIUM HERO -->
+
 <!-- STATS -->
 
 <div class="container">
